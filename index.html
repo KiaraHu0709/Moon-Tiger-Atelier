@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moontiger 客製訂單需求表單</title>
+  <style>
+    @font-face {
+      font-family: 'jf-jinxuan-heavy';
+      src: url('jf-jinxuan-heavy.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #fdfdfd;
+      padding: 30px;
+      max-width: 640px;
+      margin: auto;
+      color: #333;
+      font-size: 25px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      color: hsl(266, 92%, 71%);
+      font-size: 42px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+      font-family: 'jf-jinxuan-heavy', "Noto Sans TC", sans-serif;
+    }
+
+    .eng {
+      letter-spacing: 0px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #7c614a;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      line-height: 1.8;
+      letter-spacing: 1.8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 24px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #5b4633;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid hsl(266, 92%, 71%);
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px;
+      background-color: hsl(266, 92%, 71%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #7c614a;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    /* 📱 手機板調整 */
+    @media (max-width: 480px) {
+      body {
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        margin-bottom: 30px;
+      }
+
+      input, textarea, button {
+        font-size: 16px;
+      }
+
+      .social-icons img {
+        width: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2><span class="eng">Moontiger</span> 客製訂單需求表單</h2>
+  <p class="subtitle">供前期資料整理，製作細節會再跟您討論喔！</p>
+
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCF2CHF4opXtJmXZWOYdQqOLiv-n9cDpIH7ez8udM8D1g2FQ/formResponse" method="POST">
+    <label>1. 製作順位編號：</label>
+    <input type="text" name="entry.44706647" required>
+
+    <label>2. 海報狀態：</label>
+    <input type="text" name="entry.963705417" placeholder="請輸入未裱框／已裱框" required>
+
+    <label>3. 聯絡帳號：</label>
+    <input type="text" name="entry.1825074593" placeholder="請輸入用IG／FB+帳號名稱" required>
+
+    <label>4. 匯款日期：</label>
+    <input type="text" name="entry.1201739973" placeholder="範例：2025/05/30" required>
+
+    <label>5. 匯款後五碼：</label>
+    <input type="text" name="entry.690636291" required>
+
+    <label>6. 取貨方式：</label>
+    <input type="text" name="entry.1536445380" placeholder="請輸入：郵寄(外縣市會寄郵局大型包裹)／面交(約雙北捷運站)" required>
+
+    <button type="submit">送出表單</button>
+  </form>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/moon_tiger_atelier" target="_blank">
+      <img src="https://kiarahu0709.github.io/Moon-Tiger-Atelier/ig-48x48_0.png" alt="Instagram" title="IG看作品" width="48">
+    </a>
+    <a href="https://www.youtube.com/channel/UC3_nO7L4_shTjvEup8qYG2g" target="_blank">
+      <img src="https://kiarahu0709.github.io/Moon-Tiger-Atelier/yt-48x48_0.png" alt="YouTube" title="看影片" width="48">
+    </a>
+  </div>
+
+</body>
+</html>
